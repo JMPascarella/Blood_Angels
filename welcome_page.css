@@ -9,17 +9,9 @@ body {
     width: 100%;
     background: url(images/aquilla_background.jpg) no-repeat;
     background-color: black;
+    background-size: cover;
     position: relative;
     margin: auto;
-}
-
-aside {
-    height: 300%;
-    width: 11.65%;
-    color: red;
-    font: 48px gothic;
-    overflow: hidden;
-    float: right;
 }
 
 div.css-typing {
@@ -59,7 +51,7 @@ p {
   overflow: hidden;
 }
 .css-typing p:nth-child(1) {
-  width: 16.6em;
+  width: 17.5em;
   -webkit-animation: type 2s steps(40, end);
   animation: type 2s steps(40, end);
   -webkit-animation-fill-mode: forwards;
@@ -67,7 +59,7 @@ p {
 }
 
 .css-typing p:nth-child(2) {
-  width: 22em;
+  width: 22.5em;
   opacity: 0;
   -webkit-animation: type2 2s steps(40, end);
   animation: type2 2s steps(40, end);
