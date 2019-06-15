@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+/*
+    Author: JMP
+    File Name: ig_unit_pages_layout.css
+*/
+
+/* HTML & Body Styles */
+
+html {
+    background-image: url(images/ig_background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    width: 85%;
+    background: linear-gradient(to right, black, red);
+    margin: auto;
+}
+
+
+/* Navigation Styles */
+
+div#landing_pages {
+    -webkit-flex: 3 1 750px;
+    flex: 3 1 750px;
+    height: 50px;
+    margin-left: 350px;
+    margin-top:25px;
+    margin-right: 350px; 
+    width: 100%;
+}
+
+nav#landing_pages ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: auto;
+}
+
+nav#landing_pages ul > li {
+    flex: 1 1 250px;
+}
+
+div#strike_force_pages {
+    -webkit-flex: 1 1 250px;
+    flex: 1 1 250px;
+    height: 100%;
+}
+
+nav#strike_force_pages {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding-top: 35px;
+    padding-left: 35px;
+}
+
+article {
+    -webkit-flex: 3 1 750px;
+    flex: 3 1 750px;
+    margin-top: 50px;
+}
+
+div.units {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+}
+
+div.units, div.units > figure, div.units > p, div.stats {
+    flex: 1 1 150px;
+}
+
+div.units > p {
+    overflow: auto;
+}
+
+/* Image Styles */
+
+figure.strike_force_banner > img#banner {
+    display: block;
+    margin: auto;
+}
+
+figure.strike_force_banner {
+    width: 100%;
+    overflow: hidden;
+        
+}
+
+figure.strike_force_banner figcaption {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 2.1em;
+    height: 1.5em;
+}
+
+article> div.units > figure > figcaption {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom:15px;
+    font-size: 2.1em;
+}
+
+figure.strike_force_banner img#symbol {
+    display: none;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+    figure.strike_force_banner img#banner, figure.strike_force_banner figcaption {
+        display: none;
+    }
+
+    figure.strike_force_banner img#symbol {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex: 0 0 480px;
+        flex: 0 0 480px;
+        
+
+    }
+}

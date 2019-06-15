@@ -27,6 +27,7 @@ body {
 nav#landing_pages {
     width: 100%;
     
+    
 }
 
 nav#landing_pages ul {
@@ -43,6 +44,7 @@ nav#landing_pages li {
     text-decoration: none;
     color: crimson;
     padding-left: 30px;
+   
 }
 
 nav ul li a {
@@ -61,7 +63,9 @@ nav#strike_force_pages {
     flex: row nowrap;
     background-color: black;
     color: crimson;
-    padding: 10px;
+    padding: 25px 10px;
+    height: 85%;
+    margin: 25px;
 }
 
 nav#strike_force_pages > li {

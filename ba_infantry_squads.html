@@ -10,23 +10,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css_reset.css">
-	<link rel="stylesheet" href="ba_unit_pages.css">
+	<link rel="stylesheet" href="ba_unit_pages_layout.css">
 	<title>Wings of the Archangel</title>
 </head>
 <body>
 	<figure class="strike_force_banner">
 		<img id="banner" src="Images/blood_angels_banner.jpg" alt="Image of Blood Angel Strike Force" />
-		<img id="symbol" src="Images/ba_symbol.jpg" alt="Blood Angel Symbol" />
-		<figcaption>Blood Angel strike force 'Wings of the Archangel'</figcaption>
+		<img id="marine" src="images/blood_angels_banner_single.jpg" alt="Blood Angels Marine" />
+		<figcaption>Blood Angels Strike Force 'Wings of the Archangel'</figcaption>
 	</figure>
-	<nav id="landing_pages">
-		<ul>
-			<li><a href="id_strike_force_landing_page.html">Inquisitorial Detatchment Epsilon Delta</a></li>
-			<li><a href="ba_landing_page.html">Blood Angel Strike Force 'Wings of the Archangel'</a></li>
-			<li><a href="ig_landing_page.html">Astra Militarum Strike Force --REDACTED--</a></li>
-		</ul>
-	</nav>
-
+	<div id="landing_pages">
+		<nav id="landing_pages">
+			<ul>
+				<li><a href="id_strike_force_landing_page.html">Inquisitorial Detatchment <br /> Epsilon Delta</a></li>
+				<li><a href="ig_landing_page.html">Astra Militarum <br /> --REDACTED-- Regiment</a></li>
+				<li><a href="ba_landing_page.html">Blood Angel Strike Force <br /> 'Wings of the Archangel'</a></li>
+			</ul>
+		</nav>
+	</div>
 	<div id="strike_force_pages">
 		<nav id="strike_force_pages">
 			<ul>
@@ -38,7 +39,7 @@
 		</nav>
 	</div>
 	<article>
-		<div>
+		<div class="units">
 			<figure>
 				<img src="images/blood_angel_holder.jpg" alt="Image of Veteran Terminator Squad Bavetius, 1st Company, 1st Squad" />
 				<figcaption>Veteran Terminator Squad Bavetius, 1st Company, 1st Squad</figcaption>
@@ -46,26 +47,136 @@
 			<p>Dolore fugiat reprehenderit culpa officia sit culpa do Lorem consectetur sit mollit laborum veniam velit. Est
 				velit quis in do est elit. Consectetur fugiat excepteur do excepteur mollit deserunt culpa dolor et ex cillum
 				ut. Exercitation dolor adipisicing elit eiusmod amet tempor laboris.</p>
+			<div class="stats">
+				<table class="stats">
+					<tr>
+						<th colspan="2">Battle Statistics</th>
+					</tr>
+					<tr>
+						<td>Number of Battles</td>
+						<td> # OF BATTLES</td>
+					</tr>
+					<tr>
+						<td>Kill/Death Ratio</td>
+						<td>K/D RATIO</td>
+					</tr>
+					<tr>
+						<td>Notable Actions</td>
+						<td>NOTABLE ACTIONS</td>
+					</tr>
+				</table>
+				<div class="buttons">
+					<button>Record Battle</button>
+					<button>Edit Previous Battles</button>
+					<div class="battleForm">
+						<form class="battleInfo">
+							<fieldset>
+								<legend>New Battle Information</legend>
+								<label for="numBattles">Number of Battles</label>
+								<input name="numBattles" id="numBattles" type="number" value="0" step="1" min="0" max="99" />
+								<label for="numKills">Number of Kills</label>
+								<input name="numKills" id="numKills" type="number" value="0" step="1" min="0" max="99" />
+								<label for="numDeaths">Number of Deaths</label>
+								<input name="numDeaths" id="numDeaths" type="number" value="0" step="1" min="0" max="99" />
+								<label for="noteActions">Notable Actions</label>
+								<textarea name"noteActions" id="noteActions">Notable Actions</textarea>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div>
+		<div class="units">
 			<figure>
 				<img src="images/blood_angel_holder.jpg" alt="Image of Tactical Squad Meteros, 2nd Company, 3rd Squad" />
 				<figcaption>Tactical Squad Meteros, 2nd Company, 3rd Squad</figcaption>
 			</figure>
-			<p>Dolore fugiat reprehenderit culpa officia sit culpa do Lorem consectetur sit mollit laborum veniam velit. Est
-				velit quis in do est elit. Consectetur fugiat excepteur do excepteur mollit deserunt culpa dolor et ex cillum
-				ut. Exercitation dolor adipisicing elit eiusmod amet tempor laboris.</p>
+			<p>As an ancient and honored Chapter of the Adeptus Astartes, the armouries of the Blood Angels are filled with some of the finest wargear ever forged by the Imperium. Squad Meteros benefit from this, as can be seen by their mix of armour and helmets, showcasing the various marks of power armour used by the Adeptus Astartes during their long and illustrious wars for the Emperor.</p>
+			<div class="stats">
+				<table class="stats">
+					<tr>
+						<th colspan="2">Battle Statistics</th>
+					</tr>
+					<tr>
+						<td>Number of Battles</td>
+						<td> # OF BATTLES</td>
+					</tr>
+					<tr>
+						<td>Kill/Death Ratio</td>
+						<td>K/D RATIO</td>
+					</tr>
+					<tr>
+						<td>Notable Actions</td>
+						<td>NOTABLE ACTIONS</td>
+					</tr>
+				</table>
+				<div class="buttons">
+					<button>Record Battle</button>
+					<button>Edit Previous Battles</button>
+					<div class="battleForm">
+						<form class="battleInfo">
+							<fieldset>
+								<legend>New Battle Information</legend>
+								<label for="numBattles">Number of Battles</label>
+								<input name="numBattles" id="numBattles" type="number" value="0" step="1" min="0" max="99" />
+								<label for="numKills">Number of Kills</label>
+								<input name="numKills" id="numKills" type="number" value="0" step="1" min="0" max="99" />
+								<label for="numDeaths">Number of Deaths</label>
+								<input name="numDeaths" id="numDeaths" type="number" value="0" step="1" min="0" max="99" />
+								<label for="noteActions">Notable Actions</label>
+								<textarea name"noteActions" id="noteActions">Notable Actions</textarea>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div>
+		<div class="units">
 			<figure>
 				<img src="images/blood_angel_holder.jpg" alt="Image of Tactical Squad Angelon, 2nd Company, 4th Squad" />
 				<figcaption>Tactical Squad Angelon, 2nd Company, 4th Squad</figcaption>
 			</figure>
-			<p>Dolore fugiat reprehenderit culpa officia sit culpa do Lorem consectetur sit mollit laborum veniam velit. Est
-				velit quis in do est elit. Consectetur fugiat excepteur do excepteur mollit deserunt culpa dolor et ex cillum
-				ut. Exercitation dolor adipisicing elit eiusmod amet tempor laboris.</p>
+			<p>Sergeant Angelon has served the Second Company for over two centuries and has proven his strength and valour countless times. His fellow brothers strive to prove themselves alonside their Sergeant.</p>
+			<div class="stats">
+				<table class="stats">
+					<tr>
+						<th colspan="2">Battle Statistics</th>
+					</tr>
+					<tr>
+						<td>Number of Battles</td>
+						<td> # OF BATTLES</td>
+					</tr>
+					<tr>
+						<td>Kill/Death Ratio</td>
+						<td>K/D RATIO</td>
+					</tr>
+					<tr>
+						<td>Notable Actions</td>
+						<td>NOTABLE ACTIONS</td>
+					</tr>
+				</table>
+				<div class="buttons">
+					<button>Record Battle</button>
+					<button>Edit Previous Battles</button>
+					<div class="battleForm">
+						<form class="battleInfo">
+							<fieldset>
+								<legend>New Battle Information</legend>
+								<label for="numBattles">Number of Battles</label>
+								<input name="numBattles" id="numBattles" type="number" value="0" step="1" min="0" max="99" />
+								<label for="numKills">Number of Kills</label>
+								<input name="numKills" id="numKills" type="number" value="0" step="1" min="0" max="99" />
+								<label for="numDeaths">Number of Deaths</label>
+								<input name="numDeaths" id="numDeaths" type="number" value="0" step="1" min="0" max="99" />
+								<label for="noteActions">Notable Actions</label>
+								<textarea name"noteActions" id="noteActions">Notable Actions</textarea>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div>
+		<div class="units">
 			<figure>
 				<img src="images/blood_angel_holder.jpg" alt="Image of Tactical Squad Gariel, 2nd Company, 6th Squad" />
 				<figcaption>Tactical Squad Gariel, 2nd Company, 6th Squad</figcaption>
@@ -73,8 +184,46 @@
 			<p>Dolore fugiat reprehenderit culpa officia sit culpa do Lorem consectetur sit mollit laborum veniam velit. Est
 				velit quis in do est elit. Consectetur fugiat excepteur do excepteur mollit deserunt culpa dolor et ex cillum
 				ut. Exercitation dolor adipisicing elit eiusmod amet tempor laboris.</p>
+			<div class="stats">
+					<table class="stats">
+						<tr>
+							<th colspan="2">Battle Statistics</th>
+						</tr>
+						<tr>
+							<td>Number of Battles</td>
+							<td> # OF BATTLES</td>
+						</tr>
+						<tr>
+							<td>Kill/Death Ratio</td>
+							<td>K/D RATIO</td>
+						</tr>
+						<tr>
+							<td>Notable Actions</td>
+							<td>NOTABLE ACTIONS</td>
+						</tr>
+					</table>
+					<div class="buttons">
+						<button>Record Battle</button>
+						<button>Edit Previous Battles</button>
+						<div class="battleForm">
+						<form class="battleInfo">
+							<fieldset>
+								<legend>New Battle Information</legend>
+								<label for="numBattles">Number of Battles</label>
+								<input name="numBattles" id="numBattles" type="number" value="0" step="1" min="0" max="99" />
+								<label for="numKills">Number of Kills</label>
+								<input name="numKills" id="numKills" type="number" value="0" step="1" min="0" max="99" />
+								<label for="numDeaths">Number of Deaths</label>
+								<input name="numDeaths" id="numDeaths" type="number" value="0" step="1" min="0" max="99" />
+								<label for="noteActions">Notable Actions</label>
+								<textarea name"noteActions" id="noteActions">Notable Actions</textarea>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div>
+		<div class="units">
 			<figure>
 				<img src="images/blood_angel_holder.jpg" alt="Image of Tactical Squad Forien, 2nd Company, 9th Squad" />
 				<figcaption>Tactical Squad Forien, 2nd Company, 9th Squad</figcaption>
@@ -82,8 +231,46 @@
 			<p>Dolore fugiat reprehenderit culpa officia sit culpa do Lorem consectetur sit mollit laborum veniam velit. Est
 				velit quis in do est elit. Consectetur fugiat excepteur do excepteur mollit deserunt culpa dolor et ex cillum
 				ut. Exercitation dolor adipisicing elit eiusmod amet tempor laboris.</p>
+			<div class="stats">
+				<table class="stats">
+					<tr>
+						<th colspan="2">Battle Statistics</th>
+					</tr>
+					<tr>
+						<td>Number of Battles</td>
+						<td> # OF BATTLES</td>
+					</tr>
+					<tr>
+						<td>Kill/Death Ratio</td>
+						<td>K/D RATIO</td>
+					</tr>
+					<tr>
+						<td>Notable Actions</td>
+						<td>NOTABLE ACTIONS</td>
+					</tr>
+				</table>
+				<div class="buttons">
+					<button>Record Battle</button>
+					<button>Edit Previous Battles</button>
+					<div class="battleForm">
+						<form class="battleInfo">
+							<fieldset>
+								<legend>New Battle Information</legend>
+								<label for="numBattles">Number of Battles</label>
+								<input name="numBattles" id="numBattles" type="number" value="0" step="1" min="0" max="99" />
+								<label for="numKills">Number of Kills</label>
+								<input name="numKills" id="numKills" type="number" value="0" step="1" min="0" max="99" />
+								<label for="numDeaths">Number of Deaths</label>
+								<input name="numDeaths" id="numDeaths" type="number" value="0" step="1" min="0" max="99" />
+								<label for="noteActions">Notable Actions</label>
+								<textarea name"noteActions" id="noteActions">Notable Actions</textarea>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div>
+		<div class="units">
 			<figure>
 				<img src="images/blood_angel_holder.jpg" alt="Image of Death Company, Wings of Mortalis" />
 				<figcaption>Death Company, Wings of Mortalis</figcaption>
@@ -91,8 +278,46 @@
 			<p>Dolore fugiat reprehenderit culpa officia sit culpa do Lorem consectetur sit mollit laborum veniam velit. Est
 				velit quis in do est elit. Consectetur fugiat excepteur do excepteur mollit deserunt culpa dolor et ex cillum
 				ut. Exercitation dolor adipisicing elit eiusmod amet tempor laboris.</p>
+			<div class="stats">
+				<table class="stats">
+					<tr>
+						<th colspan="2">Battle Statistics</th>
+					</tr>
+					<tr>
+						<td>Number of Battles</td>
+						<td> # OF BATTLES</td>
+					</tr>
+					<tr>
+						<td>Kill/Death Ratio</td>
+						<td>K/D RATIO</td>
+					</tr>
+					<tr>
+						<td>Notable Actions</td>
+						<td>NOTABLE ACTIONS</td>
+					</tr>
+				</table>
+				<div class="buttons">
+					<button>Record Battle</button>
+					<button>Edit Previous Battles</button>
+					<div class="battleForm">
+						<form class="battleInfo">
+							<fieldset>
+								<legend>New Battle Information</legend>
+								<label for="numBattles">Number of Battles</label>
+								<input name="numBattles" id="numBattles" type="number" value="0" step="1" min="0" max="99" />
+								<label for="numKills">Number of Kills</label>
+								<input name="numKills" id="numKills" type="number" value="0" step="1" min="0" max="99" />
+								<label for="numDeaths">Number of Deaths</label>
+								<input name="numDeaths" id="numDeaths" type="number" value="0" step="1" min="0" max="99" />
+								<label for="noteActions">Notable Actions</label>
+								<textarea name"noteActions" id="noteActions">Notable Actions</textarea>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div>
+		<div class="units">
 			<figure>
 				<img src="images/blood_angel_holder.jpg" alt="Image of Death Company, Mortalis Dexros" />
 				<figcaption>Death Company, Mortalis Dexros</figcaption>
@@ -100,13 +325,45 @@
 			<p>Dolore fugiat reprehenderit culpa officia sit culpa do Lorem consectetur sit mollit laborum veniam velit. Est
 				velit quis in do est elit. Consectetur fugiat excepteur do excepteur mollit deserunt culpa dolor et ex cillum
 				ut. Exercitation dolor adipisicing elit eiusmod amet tempor laboris.</p>
+			<div class="stats">
+				<table class="stats">
+					<tr>
+						<th colspan="2">Battle Statistics</th>
+					</tr>
+					<tr>
+						<td>Number of Battles</td>
+						<td> # OF BATTLES</td>
+					</tr>
+					<tr>
+						<td>Kill/Death Ratio</td>
+						<td>K/D RATIO</td>
+					</tr>
+					<tr>
+						<td>Notable Actions</td>
+						<td>NOTABLE ACTIONS</td>
+					</tr>
+				</table>
+				<div class="buttons">
+					<button>Record Battle</button>
+					<button>Edit Previous Battles</button>
+					<div class="battleForm">
+						<form class="battleInfo">
+							<fieldset>
+								<legend>New Battle Information</legend>
+								<label for="numBattles">Number of Battles</label>
+								<input name="numBattles" id="numBattles" type="number" value="0" step="1" min="0" max="99" />
+								<label for="numKills">Number of Kills</label>
+								<input name="numKills" id="numKills" type="number" value="0" step="1" min="0" max="99" />
+								<label for="numDeaths">Number of Deaths</label>
+								<input name="numDeaths" id="numDeaths" type="number" value="0" step="1" min="0" max="99" />
+								<label for="noteActions">Notable Actions</label>
+								<textarea name"noteActions" id="noteActions">Notable Actions</textarea>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 	</article>
-
-	
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
