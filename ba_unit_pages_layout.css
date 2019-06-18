@@ -157,48 +157,6 @@ article> div.units figure figcaption {
     div.buttons{
         display: relative;
     }
-
-    div.battleFormAdd {
-        display: none;
-        position: fixed;
-        left: 780px;
-        top: 350px;
-        height: auto;
-        width: 500px;   
-    }
-
-    div.buttons > button:active + div.battleFormAdd, div.buttons > div.battleFormAdd:hover {
-        display: block;
-    }
-
-    div.formRow {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-flow: row wrap;
-        flex-flow: row wrap;
-    }
-
-    div.formRow > * {
-        -webkit-flex: 1 1 150;
-        flex: 1 1 150;
-        padding: 10px;
-        margin: 10px;
-    }
-
-    div.formButtons {
-        padding: 12px;
-        width: 100%;
-    }
-
-    div.formButtons > * {
-        margin: 5px;
-        text-align: center;
-    }
-
-    div.formButtons > input:first-of-type {
-        margin-left: 80px;
-        margin-right: 20px;
-    }
 }
 
 @media only screen and (max-width: 1200px) {
